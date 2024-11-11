@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom-Mix TGM-Edition</title>
+    <style>
+        body {
+            background-color: #555;
+            background-size: cover;
+            flex-direction: column;
+            height: 95vh;
+        }
+
+        h1 {
+            margin: 50px;
+        }
+
+        h3 {
+            margin: 15px;
+            color: white;
+        }
+
+        .topWindowLine {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 10000px;
+            background-color: black;
+            width: 99vw;
+            z-index: 9999;
+        }
+
+        .container {
+            display: flex;
+            flex-grow: 1;
+            margin-top: auto;
+            margin-bottom: auto;
+            flex-wrap: wrap;
+        }
+
+        button {
+            color: white;
+            border-radius: 10000px;
+            background-color: #555;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.25s;
+        }
+
+          button:hover {
+            background-color: #333;
+          }
+        img {
+          color: white;
+          height: 150px;
+          width: 150px;
+          margin: 10px;
+          padding: ;
+          border-radius: 25px;
+          outline-width: 10px;
+          outline: 5px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="topWindowLine" id="topLine">
+      <h3>Classroom-MIx TGM-Edition</h3>
+      <button onclick="switchPages('Home')">Home</button>
+    </div>
+    <div class="container" id="contentContainer"></div>
+    <script>
+        function switchPages(pageName) {
+          addForScaling = "style='width: 100vw; height: 100vh;'";
+          content = ``;
+          switch (pageName) {case "Home":
+            content = `<img onclick="switchPages('CookieClicker')" src="https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok" alt="Cookie Clicker">
+      <img onclick="switchPages('MotoX3M')" src="https://th.bing.com/th/id/R.db7653ce9a27526dffed42476e8096b3?rik=eeKVpR1uBqT%2fIw&riu=http%3a%2f%2fmonstrocat.com%2fweb%2fgame-thumbnails%2fS%2fScreenshot_3.png&ehk=tEC%2bMICEeNU7aXUEkbmUiMQvBORGnc%2f93lQLcbd4LkU%3d&risl=&pid=ImgRaw&r=0" alt="Moto X3M">
+      <img onclick="switchPages('MotoX3M2')" src="https://new66ez.github.io/img/moto3mx/moto-x3m-2.png" alt="Moto X3M 2">
+      <img onclick="switchPages('MotoX3M3')" src="https://th.bing.com/th/id/R.c986f17424145e137b6316a3445fa02d?rik=gN84ww1X7IZGoQ&riu=http%3a%2f%2fwww.gamesflare.org%2fgames%2fimages%2f2016-2%2fmoto-x3m-3.jpg&ehk=KW3ZhlhBJGvhnLzRE7e8nQux%2bfj3CNETH%2btQ%2bqJKqLU%3d&risl=&pid=ImgRaw&r=0" alt="Moto X3M 3">
+      <img onclick="switchPages('MotoX3MWinter')" src="https://th.bing.com/th/id/OIP.acMW1e7TfoiEgKymqtb3XQHaHa?rs=1&pid=ImgDetMain" alt="Moto X3M Winter">
+      <img onclick="switchPages('MotoX3MSpookyLand')" src="https://th.bing.com/th/id/OIP.d5g-fVsFnS4upPkwouSKvQHaHa?rs=1&pid=ImgDetMain" alt="Moto X3M Spooky Land">
+      <img onclick="switchPages('MotoX3MPoolParty')" src="https://kevin.games/assets/images/games/moto-x3m-pool-party.jpg" alt="Moto X3M Pool Party">
+      <img onclick="switchPages('Ovo')" src="https://th.bing.com/th/id/OIP.fnNgk5T7BpdpyPfD5BiIYAAAAA?rs=1&pid=ImgDetMain" alt="Ovo">
+      <img onclick="switchPages('Ovo2')" src="https://th.bing.com/th/id/OIP.e_IYIrVTACaEN9ALJ_Ji7QAAAA?rs=1&pid=ImgDetMain" alt="Ovo 2">
+      <img onclick="switchPages('OvoDimensions')" src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/76d0bf7026c6bf569a2fa96e92289484.png" alt="Ovo Dimensions">`;
+            break;
+            case "CookieClicker":
+              content = `<div id="fr" style='width: 100vw; height: 100vh;' data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@e7d53b913d54429e5e118ca9541fb0f8f1f66bdc/dist/cc.xml&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@e7d53b913d54429e5e118ca9541fb0f8f1f66bdc/dist/cc.xml&amp;container=ig" frameborder="0" allowfullscreen=""></iframe></div>`;
+              break;
+            case "MotoX3M":
+              content = `<div id="fr" style='width: 100vw; height: 100vh;' data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@99563e3bf6eb25323e3bd5af20dcd9a261b97991/build/m3m/m3m.xml&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@99563e3bf6eb25323e3bd5af20dcd9a261b97991/build/m3m/m3m.xml&amp;container=ig" frameborder="0" allowfullscreen=""></iframe></div>`;
+              break;
+            case "MotoX3M2":
+              content = `<div id="fr" style='width: 100vw; height: 100vh;' data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://840137492-163049537400263946.preview.editmysite.com/uploads/b/139890129-622598590552046666/files/mx3m2.xml&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://840137492-163049537400263946.preview.editmysite.com/uploads/b/139890129-622598590552046666/files/mx3m2.xml&amp;container=ig" frameborder="0" allowfullscreen=""></iframe></div>`;
+              break;
+            case "MotoX3M3":
+              content = `<div id="fr" style='width: 100vw; height: 100vh;' data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/mx3m3.xml&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/mx3m3.xml&amp;container=ig" frameborder="0" allowfullscreen=""></iframe></div>`;
+              break;
+            case "MotoX3MWinter":
+              content = `<div id="fr" style='width: 100vw; height: 100vh;' data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@ef23f79324c37921a9e7e53dadd30c9721235820/build/m3mw/m3mw.xml&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@ef23f79324c37921a9e7e53dadd30c9721235820/build/m3mw/m3mw.xml&amp;container=ig" frameborder="0" allowfullscreen=""></iframe></div>`;
+              break;
+            case "MotoX3MSpookyLand":
+              content = `<div id="fr" style='width: 100vw; height: 100vh;' data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://318573026-162284027483016384.preview.editmysite.com/uploads/b/139890129-642750312748978757/files/mx3msl.xml&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://318573026-162284027483016384.preview.editmysite.com/uploads/b/139890129-642750312748978757/files/mx3msl.xml&amp;container=ig" frameborder="0" allowfullscreen=""></iframe></div>`;
+              break;
+            case "MotoX3MPoolParty":
+              content = `<div id="fr" style='width: 100vw; height: 100vh;' data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://649025137-174029463385024710.preview.editmysite.com/uploads/b/139890129-767696982876512205/files/mx3mpp.xml&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://649025137-174029463385024710.preview.editmysite.com/uploads/b/139890129-767696982876512205/files/mx3mpp.xml&amp;container=ig" frameborder="0" allowfullscreen=""></iframe></div>`;
+              break;
+            case "Ovo":
+              content = `<div id="fr" style='width: 100vw; height: 100vh;'><iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml&amp;container=ig" frameborder="0" allowfullscreen="" style="width: 100%; height: 100%; border: 0;"></iframe></div>`;
+              break;
+            case "Ovo2":
+              content = `<div id="fr" style='width: 100vw; height: 100vh;' data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo2/ovo2.xml&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo2/ovo2.xml&amp;container=ig" frameborder="0" allowfullscreen=""></iframe></div>`;
+              break;
+            case "OvoDimensions":
+              content = `<iframe id="innerFrame" style='width: 100vw; height: 100vh;' name="innerFrame" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads" frameborder="0" allowfullscreen="" src="https://g.igroutka.ru/games/164/HSbuCKME4eYycQ8P/3/ovo_dimensions/?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&amp;mp_embed=0&amp;mp_game_id=243769&amp;mp_game_uid=ovo-dimensions&amp;mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fovo-dimensions&amp;mp_int=1&amp;mp_locale=en_US&amp;mp_player_type=IFRAME&amp;mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&amp;mp_site_name=miniplay.com&amp;mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&amp;mp_timezone=Europe%2FMadrid&amp;mp_view_type=" style="overflow: auto;"></iframe>`;
+              break;
+            default:
+              break;
+          }
+          document.getElementById('contentContainer').innerHTML = content;
+        }
+        switchPages("Home");
+    </script>
+</body>
+</html>
